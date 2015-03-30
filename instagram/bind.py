@@ -62,7 +62,7 @@ def bind_method(**config):
                 self.pagination_format = 'next_url'
             else:
                 self.pagination_format = kwargs.pop('pagination_format', 'next_url')
-            self.return_json = kwargs.pop("return_json", False)
+            self.return_json = kwargs.pop("return_json", True)
             self.max_pages = kwargs.pop("max_pages", 3)
             self.with_next_url = kwargs.pop("with_next_url", None)
             self.parameters = {}
